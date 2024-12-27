@@ -1,4 +1,4 @@
-class PostImagesController < ApplicationController
+class Public::PostImagesController < ApplicationController # Public::を追加
   def new
     @post_image = PostImage.new
   end

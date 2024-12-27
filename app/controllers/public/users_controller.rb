@@ -1,4 +1,4 @@
-class UsersController < ApplicationController
+class Public::UsersController < ApplicationController # Public::を追加
   def show
     @user = User.find(params[:id])
     @post_images = @user.post_images.page(params[:page])
